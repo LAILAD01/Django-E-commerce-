@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-commerce Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/> -->
+        <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="/media/LOGO2.png"  class="logo" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'shop' %}">Shop</a></li>
+                    <li><a class="active" href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'cart' %}"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h1> this is the blog page</h1>
+        </section>
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="/media/LOGO2.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong>  123 some road, street 12, some city</p>
+                <p><strong>Phone:</strong>  +00 1234 567</p>
+                <p><strong>E-mail</strong> <a href="mailto:someone@example.com">someone@example.co</a></p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i></a>
+                        <i class="fab fa-twitter"></i></a>
+                        <i class="fab fa-instagram"></i></a>
+                        <i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="{% url 'about' %}">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">terms & Conditions</a>
+                <a href="{% url 'contact' %}">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="{% url 'login' %}">Sign In</a>
+                <a href="{% url 'cart' %">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col" id="install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="/media/appStore.png" alt="">
+                    <img class="google" src="/media/googlePlay.png" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="/media/payment.jpeg" alt="">
+            </div>
+            <div class="copyright">
+                <p>2023, E-commerce Website</p>
+            </div>
+        </footer>
+    </body>
+</html>

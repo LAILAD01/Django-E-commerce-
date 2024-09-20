@@ -1,0 +1,45 @@
+/* product_detail.css */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1, h2, h4, h6 {
+    color: #5b3737;
+}
+
+.product-detail {
+    padding: 40px 0;
+}
+
+.product-detail img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-details {
+    list-style: none;
+    padding: 0;
+}
+
+.product-details li {
+    margin-bottom: 15px;
+}
+
+.product-details li span {
+    font-weight: bold;
+    color: #088178;
+}
+
+/* You can continue styling based on your design preferences */
